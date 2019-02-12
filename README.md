@@ -57,3 +57,11 @@ Two users are predefined:
 | :-----------: | :------: |
 | user@mail.ru  | user     |
 | admin@mail.ru | admin    |
+
+Gratitude
+---------
+
+Thanks Şükrü Uzel and his [spring-boot-quickstart-archetype][project]
+which was taken as starting point for this project.
+
+[project]: https://github.com/suzel/spring-boot-quickstart-archetype
