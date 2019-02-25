@@ -1,4 +1,4 @@
-package ${package}.${artifactId};
+package ${package}.${artifactId}.web.controller;
 
 import ${package}.${artifactId}.annotations.ConfiguredWebMvcTest;
 import ${package}.${artifactId}.web.controller.HomeController;
@@ -10,7 +10,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ConfiguredWebMvcTest(HomeController.class)
-public class ApplicationTests {
+public class HomeControllerTests {
 
     @Autowired
     private MockMvc mockMvc;
