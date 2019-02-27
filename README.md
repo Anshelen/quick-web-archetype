@@ -1,6 +1,9 @@
 Quick Web Maven Archetype
 =========================================
 
+[![Build Status](https://travis-ci.com/Anshelen/quick-web-archetype.svg?branch=master)](https://travis-ci.com/Anshelen/quick-web-archetype)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Summary
 -------
 The project is a Maven archetype for Spring Boot web application using Thymeleaf

@@ -1,0 +1,19 @@
+language: java
+
+jdk: oraclejdk8
+
+cache:
+  directories:
+    - $HOME/.m2
+
+script:
+  - mvn clean install
+  - mkdir spring-boot-app && cd spring-boot-app
+  - mvn archetype:generate -DarchetypeGroupId=dev.shelenkov -DarchetypeArtifactId=quick-web-archetype -DarchetypeVersion=1.0.0 -DgroupId=com.company -DartifactId=webapp -Dversion=1.0.0 -DinteractiveMode=false
+  - cd webapp && mvn clean test
+  - cd ../.. && rm -rf webapp
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
